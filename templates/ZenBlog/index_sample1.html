@@ -50,10 +50,10 @@
         <h1 style="color:rgb(10, 76, 218)">سانال تِک</h1>
       </a>
 
-      <nav id="navbar" class="navbar rounded-2" style=" color:white">
+      <nav id="navbar" class="navbar rounded-2" style=" color:white" dir="rtl">
         <ul class="px-auto">
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
+          <li><a href="index.html"> آخرین اخبار </a></li>
+          <li><a href="single-post.html"> موقعیت‌های معاملاتی </a></li>
           <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="search-result.html">Search Result</a></li>
@@ -197,59 +197,42 @@
 
           <div class="col-lg-8">
             <div class="row g-5">
-              <div class="col-lg-4 border-start custom-border">
+              <div class="col-lg-6 border-start custom-border">
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-2.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.html"><img src="assets/img/11.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Sport</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                   <h2><a href="single-post.html">Let’s Get Back to Work, New York</a></h2>
                 </div>
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-5.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.html"><img src="assets/img/13.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Food</span> <span class="mx-1">&bullet;</span> <span>Jul 17th '22</span></div>
                   <h2><a href="single-post.html">How to Avoid Distraction and Stay Focused During Video Calls?</a></h2>
                 </div>
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-7.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.html"><img src="assets/img/14.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Design</span> <span class="mx-1">&bullet;</span> <span>Mar 15th '22</span></div>
                   <h2><a href="single-post.html">Why Craigslist Tampa Is One of The Most Interesting Places On the Web?</a></h2>
                 </div>
               </div>
-              <div class="col-lg-4 border-start custom-border">
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-3.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">6 Easy Steps To Create Your Own Cute Merch For Instagram</a></h2>
-                </div>
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-6.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Tech</span> <span class="mx-1">&bullet;</span> <span>Mar 1st '22</span></div>
-                  <h2><a href="single-post.html">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
-                </div>
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-8.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Travel</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">5 Great Startup Tips for Female Founders</a></h2>
-                </div>
-              </div>
 
               <!-- Trending Section -->
-              <div class="col-lg-4">
+              <div class="col-lg-6" dir="rtl">
 
                 <div class="trending">
-                  <h3>Trending</h3>
+                  <h3> نظرات معامله‌گران </h3>
                   <ul class="trending-post">
                     <li>
                       <a href="single-post.html">
                         <span class="number">1</span>
-                        <h3>The Best Homemade Masks for Face (keep the Pimples Away)</h3>
-                        <span class="author">Jane Cooper</span>
+                        <h3> حاجی همش کلاهبراریه. بیان بیرون ولی میشه ازش پول در آورد! </h3>
+                        <span class="author"> تریدر کبیر </span>
                       </a>
                     </li>
                     <li>
                       <a href="single-post.html">
                         <span class="number">2</span>
-                        <h3>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h3>
-                        <span class="author">Wade Warren</span>
+                        <h3> همش کلاهبراریه . ولی نیان بیرون هاهاهاها </h3>
+                        <span class="author"> تریدر ضغیر </span>
                       </a>
                     </li>
                     <li>
@@ -267,11 +250,13 @@
                       </a>
                     </li>
                     <li>
-                      <a href="single-post.html">
-                        <span class="number">5</span>
-                        <h3>Life Insurance And Pregnancy: A Working Mom’s Guide</h3>
-                        <span class="author">Jenny Wilson</span>
-                      </a>
+                      <div class="p-3">  
+                        <span class="author pb-3"> توئیت‌های خودمانی </span>
+                        <form action="{{url_for('analysis_request')}}" method="post">
+                          <input type="text" name="text1" id="">
+                          <input type="submit" value="نظرت را بنویس">
+                        </form>
+                      </div>
                     </li>
                   </ul>
                 </div>

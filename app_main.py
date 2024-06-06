@@ -17,3 +17,9 @@ def analysis_request():
     f.close()
     flash(users_request)
     return redirect(url_for("home"))
+
+# blog route-ing
+@app.route("/blog/<int:id_for_blog>")
+def blog():
+    pass
+    # redirect to @app.route("/blog/<int:id_for_blog>"): how to dynamic urls?
